@@ -51,7 +51,13 @@ so your .csv file will not contain these messages.
 Spotipy will open a web browser (or new tab)
 for authentication with Spotify 
 if it is the first time you use the script.
-When you login you'll be redirected to `localhost/?code=<long-id>`
+
+If your browser already considers you authenticated
+on http://spotify.com it will not show you a login page
+but redirect you immediately.
+
+Wheter immediately or after logging in 
+you will be redirected to `localhost/?code=<long-id>`
 which will very likely result in some unable-to-connect error in your browser.
 Don't worry, you only need the actual url (`localhost/?cod=<long-id>`).
 Copy it and paste it back into the terminal where the python script is running.
