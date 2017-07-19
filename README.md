@@ -9,8 +9,13 @@ Requires spotipy https://github.com/plamere/spotipy
 
 `pip install spotipy`
 
-Note that spotipy requires the Requests library,
+Note: spotipy requires the Requests library,
 pip should take care of that though.
+
+Note: written for python3,
+should run in python 2.7 thanks to 
+`from __future__ import print_function`
+as first line.
 
 ## Usage
 Get a Spotify client id and client secret
